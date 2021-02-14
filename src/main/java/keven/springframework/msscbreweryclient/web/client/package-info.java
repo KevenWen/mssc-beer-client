@@ -1,0 +1,1 @@
+package keven.springframework.msscbreweryclient.web.client;
