@@ -11,18 +11,18 @@ import java.net.URI;
 import java.util.UUID;
 
 @Component
-@ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = false)
-public class BreweryCLient {
+// @ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = false)
+public class BreweryClient {
 
     public final String BEER_PATH_V1 = "/api/v1/beer/";
     public final String BEER_PATH_V2 = "/api/v2/beer/";
 
-    //@Value("${sfg.brewery.apihost}")
+    @Value("${sfg.brewery.apihost}")
     private String apihost;
 
     private final RestTemplate restTemplate;
 
-    public BreweryCLient(RestTemplateBuilder restTemplateBuilder) {
+    public BreweryClient(RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
     }
 
