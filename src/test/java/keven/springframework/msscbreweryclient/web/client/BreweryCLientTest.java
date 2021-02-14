@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Slf4j
-class BreweryCLientTest {
+class BreweryClientTest {
 
     @Autowired
     BreweryClient client;
